@@ -2,39 +2,84 @@
 <html>
 
 <head>
-    <title>Movie Reccomendation Tool</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Movie Generator Tool</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale1.0">
 </head>
 
-<body style="background-color:#2e9100b1">
-    <button onclick="doSomething()">Start!</button>
-    <h1  style="background-color: rgb(226, 0, 0)" style="border">Movie Review!</h1>
-    <p id="test">Email:
-    <a href="mailto:movierecsupp@gmail.com" target="_blank" title="This takes you to google"> 
-         movierecsupp@gmail.com
-    </a>
-    </p>
-    <h4><span style="color:red">IMPORTANT</span> How to use the website. PLEASE READ IMPORTANT</h4>
-    <ol type="A">
-        <li>cat</li>
-        <ul>
-            <li> Furry</li>
-        </ul>
-        <li>dog</li>
-    </ol>
-    <h4>What is this website?</h4>
-    <dl>
-        <dt> Webtsite </dt>
-        <dd> A page on the internet </dd>
-    </dl>
-    <img src="https://catalogs.gsu.edu/mime/media/6/8523/20181002MLB_Fall_Stock_015_1web.jpg" height="300" alt="Gsu Campus" title="gsu campus">
-    <p>I <sub> really </sub>like pizza</p>
-    <p>Would you like to watch a movie?</p>
-    <!--MovierecSupp@gmail.com-->
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, earum amet. Accusamus delectus, rerum molestiae ipsam autem asperiores, consequuntur nostrum expedita odio maxime dolorem, cumque nam quaerat quod. Excepturi, commodi?</p>
-    <script> function doSomething(){
-        document.getElementById("test").innerHTML = "Cat" }
-        </script>
+<body>
+    <h1 id="topHeader">Movie Generator</h1>
+    <div id="directory">
+        <h2 id="directoryHeader">Directory</h2>
+        <p> <a href="index.html">Home</a> <a href="myFavorites.html">My Favorites</a>  <a href="findAMovie.html">Find a Movie</a></p> 
+    </div>
+
+    <div id="welcome">
+        <h2>Welcome!</h2>
+        <p> Welcome to Movie Generator! Using this tool, you can generate movies to watch based on your preferences! In order to tailor your preferences, add your favorite movies <a href="myFavorites.html">here!</a> </p>
+    </div>
+    
+    <div id="searchBox">
+        <h4 id="boxHeader">Generate a Reccomendation</h4>
+        <form>
+            <div>
+                <label for="directorName"> Director Name</label>
+                <input type="text" id="fname" placeholder="First Last">
+            </div>
+
+            <div>
+                <label for="yearReleased"> Year Released </label>
+                <input type="number" id="yearReleased" min="1878" max="2024" >
+            </div>
+
+            <div>
+                <label>Hour Length Max</label>
+                <input type="number" id="hourLength" min="0" max="4" value="0">
+            </div>
+
+            <div>
+                <label for="genre">Genre:</label>
+                <select id="genre" name="genre">
+                    <option value="Comedy">Comedy</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Documentary">Documentary</option>
+                    <option value="Sci-Fi">Sci-Fi</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Action">Action</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="format">Format</label>
+                <select id="format" name="format">
+                    <option value="Cartoon">Cartoon</option>
+                    <option value="RealLife">Real Life</option>
+                </select>
+            </div>
+
+            <div>
+                <input type="reset">
+                <input type="submit">
+            </div>
+            <br>
+            <h4>Favorites based list</h4>
+            <div>
+                <button id="personalReccommendation">Generate</button>
+            </div>
+        </form>
+    </div>
+    <h4 id="boxHeader">Movies to Watch!</h4>
+    <div id="movieTable">
+        <table>
+            <th>No.</th>
+            <th>Movie Name</th>
+            <th>Runtime</th>
+            <th>Genre</th>
+            <th>Director</th>
+        </table>
+        
+    </div>
 </body>
 </html>
