@@ -1,1 +1,76 @@
 
+#topHeader{
+    background-color: #0273a0;
+    border-bottom-style: solid; 
+    border-color:black;
+    margin-top: 0px;
+    text-align: center;
+    padding: 20px;
+}
+body{
+    margin: 0%;
+   /*  background-image: url("https://catalogs.gsu.edu/mime/media/6/8523/20181002MLB_Fall_Stock_015_1web.jpg");*/
+   background: linear-gradient(to top,#2e9100b1,#0273a0);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h4{
+    font-size: 18px;
+}
+a:visited{
+    color:blue
+}
+#searchBox {
+    width: 50%;
+    border: 3px solid rgb(0, 63, 62);
+    border-radius: 4%;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-left: 24%;
+    background-color:  rgb(209, 209, 209);
+    text-align: left;
+}
+#movieTable{
+    width: 90%;
+    border: 4px solid #003f3e;
+    margin-bottom: 10px;
+    background-color:  rgb(209, 209, 209);
+    margin-left: 5%;
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+    
+}
+th{
+    font-weight: bold;
+    font-size: large;
+    background-color: gray;
+    margin: 100%;
+    padding: 18px;
+    border: 0.5px solid #003f3e;
+}
+tr{
+    width:100%;
+}
+td{
+    border: 0.5px solid #003f3e;
+}
+#boxHeader{
+    margin: 5px;
+    text-align: center;
+}
+#directory{
+    margin-left: 1%;
+    text-align: left;
+}
+#directoryHeader{
+    margin: 0px;
+    text-decoration: underline;
+}
+#pageDescription{
+    text-align: center;
+}
