@@ -113,7 +113,13 @@
                                 foreach($query_run as $items)
                                 {
                                     ?>
-                                    
+                                    <tr>
+                                        <td><?= $items['data']; ?></td>
+                                        <td><?= $items['data']; ?></td>
+                                        <td><?= $items['data']; ?></td>
+                                        <td><?= $items['data']; ?></td>
+                                        <td><?= $items['data']; ?></td>
+                                    </tr>
                                     <?php
                                 }
                         }
